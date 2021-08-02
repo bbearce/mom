@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Terry Lynn King Bearce</title>
+    <link rel="stylesheet" href={{ url_for('static', filename='style.css') }}>
+</head>
+<body>
+
+<!-- The video -->
+<video autoplay loop id="myVideo">
+    <!-- <source src={{ url_for('static', filename='Whole_Vid.mp4') }} type="video/mp4"> -->
+    <source src="https://www.youtube.com/watch?v=_ke5EusFpWY&t=27s" type="video/mp4">
+</video>
+  
+<!-- Optional: some overlay text to describe the video -->
+<div class="content">
+    <h1>Terry Lynn King Bearce</h1>
+    <p>A small token of my love for my mother and her story. A window into her life, loves, friends and adventures.</p>
+    <!-- Use a button to pause/play the video with JavaScript -->
+    <button id="myBtn" onclick="myFunction()">Pause</button>
+</div>
+
+<script src={{ url_for('static', filename='javascript.js') }}></script>
+
+</body>
+</html>
